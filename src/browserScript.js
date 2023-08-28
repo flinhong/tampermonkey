@@ -23,10 +23,10 @@ ${
   document.body.setAttribute("domainuri", window.location.hostname);
 
   const styles = [
-    'https://fonts.loli.net/css2?family=Google+Sans:ital@0;1&display=swap',
+    'https://fonts.upset.dev/css2?family=Google+Sans:ital@0;1&display=swap',
     'https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Text:ital@0;1&display=swap',
     'https://cdn.honglin.ac.cn/fonts/g/css?family=Noto+Serif+SC:wght@300;400;500&display=swap',
-    'https://cdn.with.rr.nu/statically/gh/flinhong/tampermonkey/main/public/styles.min.css'
+    'https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles.min.css'
   ]
 
   styles.forEach((href) => {
