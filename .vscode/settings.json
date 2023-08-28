@@ -4,6 +4,7 @@
         "flinhong",
         "Noto",
         "tampermonkey",
-        "userscript"
+        "userscript",
+        "userscripts"
     ]
 }
