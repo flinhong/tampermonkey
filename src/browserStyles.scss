@@ -1,11 +1,13 @@
 // Fonts
-$serif-fonts: 'Crimson Text', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', serif;
-$sans-fonts: 'Google Sans', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', sans-serif;
+$serif-fonts: 'Crimson Pro', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', serif;
+$sans-fonts: 'Google Sans', 'Lato', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', sans-serif;
+$narrow-fonts: 'Oswald', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', serif;
 
 // baidu.com
 body[domainuri='www.baidu.com'] {
 
     #wrapper,
+    .c-wrapper,
     body,
     button,
     input,
@@ -13,22 +15,57 @@ body[domainuri='www.baidu.com'] {
     textarea,
     .c-font-normal,
     .c-font-medium,
+    .c-font-middle,
+    .c-font-big,
     .new-pmd .c-title,
     #container.sam_newgrid,
     span[class^="_paragraph"],
     span[class^="hint"],
     div[class^="c_font"],
     div[class^="op_dict"],
+    div[class^="card_layout"],
     #page,
     #container.sam_newgrid td,
     #container.sam_newgrid th,
     #container.sam_newgrid .c-showurl,
-    .new-pmd .cr-title {
+    .new-pmd .cr-title,
+    .wrapper_new #u .s-top-username {
         font-family: $serif-fonts !important;
     }
 
     .c-index-single {
-        font-family: $sans-fonts;
+        font-family: $narrow-fonts !important;
+    }
+
+    .s-ctner-menus .s-menu-item {
+        font: 14px/24px $sans-fonts;
+    }
+}
+
+// news.baidu.com
+body[domainuri='news.baidu.com'] {
+
+    body,
+    #usrbar,
+    #header-link-wrapper li a,
+    #header-link-wrapper li span,
+    .hotnews li:first-child strong a:link,
+    .hotnews li:first-child strong a:active,
+    .hotnews li:first-child strong a:visited,
+    .hotnews li strong a:link,
+    .hotnews li strong a:active,
+    .hotnews li strong a:visited,
+    .ulist .bold-item a,
+    .mod-tab-content .mod-tab-pane,
+    .mod-baijia .baijia-focus-list .bdlist,
+    .col-mod .focuslistnews .bold-item,
+    .l-right-col .ulist li,
+    .focuslistnews li {
+        font-family: $serif-fonts !important;
+    }
+
+    .mod-headline-tab {
+        font-family: $sans-fonts !important;
     }
 }
 
@@ -48,13 +85,13 @@ body[domainuri='www.google.cm'] {
     textarea[aria-label="Search"],
     a.fl,
     .vmod span {
-        font-family: $serif-fonts;
+        font-family: $serif-fonts !important;
     }
 
     #search h3,
     div[role="presentation"] span,
     div[role="complementary"] h3,
     #footcnt span {
-        font-family: $sans-fonts;
+        font-family: $sans-fonts !important;
     }
 }

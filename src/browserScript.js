@@ -20,8 +20,7 @@ const userscriptString = (version) => `
 
   const styles = [
     'https://fonts.upset.dev/css2?family=Google+Sans:ital@0;1&display=swap',
-    'https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Text:ital@0;1&display=swap',
-    'https://cdn.honglin.ac.cn/fonts/g/css?family=Noto+Serif+SC:wght@300;400;500&display=swap',
+    'https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital@0;1&family=Noto+Serif+SC:wght@300;400;500&family=Oswald:wght@300&display=swap',
     'https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles.min.css'
   ]
 
@@ -45,8 +44,7 @@ const tampermonkeyString = (styleString, version) => `
 // @match        *://*/*
 // @icon         https://cdn.with.rr.nu/favicon.ico
 // @resource     font_Sans https://fonts.upset.dev/css2?family=Google+Sans:ital@0;1&display=swap
-// @resource     font_Noto https://cdn.honglin.ac.cn/fonts/g/css?family=Noto+Serif+SC:wght@300;400;500&display=swap
-// @resource     font_Crimson https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Text:ital@0;1&display=swap
+// @resource     font_Noto https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital@0;1&family=Noto+Serif+SC:wght@300;400;500&family=Oswald:wght@300&display=swap
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -63,8 +61,6 @@ const tampermonkeyString = (styleString, version) => `
   GM_addStyle(sansFont);
   const notoFont = GM_getResourceText("font_Noto");
   GM_addStyle(notoFont);
-  const crimsonFont = GM_getResourceText("font_Crimson");
-  GM_addStyle(crimsonFont);
 
   GM_addStyle(\`\n${styleString}\`);
 })();
