@@ -32,7 +32,7 @@ const jsString = (styleString) => `
   GM_addStyle(\`\n${styleString}\`);
 })();
 
-// @updated:     ${Date.now().toLocaleString("en-GB", { timeZone: "UTC" })}
+// @updated      ${Date.now().toLocaleString("en-GB", { timeZone: "UTC" })}
 `;
 
 module.exports = jsString;
