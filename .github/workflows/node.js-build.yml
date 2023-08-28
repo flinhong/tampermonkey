@@ -1,14 +1,11 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Node.js CI
+name: Node.js build CI
 
 on:
   push:
     branches: ["main"]
-    # sequence of patterns matched against refs/tags
-    tags:
-      - "v*" # push events to matching v*, i.e. v1.0, v2.1.1
   pull_request:
     branches: ["main"]
 
@@ -37,3 +34,23 @@ jobs:
           name: user-script-updated
           path: |
             public/browserScript.js
+      # Update version in package.json according to the tag
+      - name: Check package version
+        uses: technote-space/package-version-check-action@v1
+      - name: Changelog
+        uses: scottbrenner/generate-changelog-action@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
