@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    https://frankindev.com/
-// @version      0.0.10
+// @version      0.0.11
 // @description  try to take over the world with styles...
 // @author       Frank Lin
 // @match        *://*/*

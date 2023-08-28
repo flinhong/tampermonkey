@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+# change directory to where the script resides.
+BASEDIR=$(dirname -- "$0")
+cd "$BASEDIR"
+
+# about:support, firefox
+firefoxFolder="/path/to/firefox/release/chrome/"
+
+cp ./public/styles.min.css "$firefoxFolder/userContent.css"
+
+# iCloud, safari
+icloudFolder="/path/to/icloud/"
+cp ./public/userscript.js "$icloudFolder"
+cp ./public/styles.min.css "$icloudFolder"

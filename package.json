@@ -1,6 +1,6 @@
 {
     "name": "tampermonkey",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "custom scripts for tampermonkey",
     "main": "index.js",
     "repository": "git@github.com:flinhong/tampermonkey.git",
@@ -10,8 +10,8 @@
     "scripts": {
         "buildCSS": "sass ./src/browserStyles.scss ./public/styles.min.css --no-source-map --style=compressed",
         "build": "yarn run buildCSS && node index.js",
-        "sync": "cp ./public/userscript.js '/Users/franklin/Library/Mobile Documents/com~apple~CloudDocs/Syncs/configs/userscripts'",
-        "publish": "npx auto-version && yarn run build && sync"
+        "local": "yarn run build && ./local.sh",
+        "publish": "npx auto-version && yarn run build"
     },
     "dependencies": {
         "js-beautify": "^1.14.9",
