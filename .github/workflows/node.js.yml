@@ -6,6 +6,9 @@ name: Node.js CI
 on:
   push:
     branches: ["main"]
+    # sequence of patterns matched against refs/tags
+    tags:
+      - "v*" # push events to matching v*, i.e. v1.0, v2.1.1
   pull_request:
     branches: ["main"]
 
@@ -28,3 +31,13 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test --if-present
+      - name: Create release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
