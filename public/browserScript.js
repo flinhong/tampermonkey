@@ -6,9 +6,9 @@
 // @author       Frank Lin
 // @match        *://*/*
 // @icon         https://cdn.with.rr.nu/favicon.ico
-// @resource     font_Sans https://fonts.font.im/css?family=Google+Sans:400,400i&display=swap
-// @resource     font_Noto https://fonts.font.im/css?family=Noto+Serif+SC:400&display=swap
-// @resource     font_Crimson https://fonts.font.im/css?family=Crimson+Pro:400,400i&display=swap
+// @resource     font_Sans https://fonts.loli.net/css?family=Google+Sans:400,400i&display=swap
+// @resource     font_Noto https://fonts.loli.net/css?family=Noto+Serif+SC:400&display=swap
+// @resource     font_Crimson https://fonts.loli.net/css?family=Crimson+Pro:400,400i&display=swap
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -96,4 +96,4 @@ body[domainuri="www.google.cm"] #footcnt span {
 `);
 })();
 
-// @updated      Mon, 28 Aug 2023 08:33:22 GMT
+// @updated      Mon, 28 Aug 2023 10:02:13 GMT

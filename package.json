@@ -9,8 +9,8 @@
   "private": false,
   "scripts": {
     "buildCSS": "sass ./src/browserStyles.scss ./src/browserStyles.css --no-source-map",
-    "build": "yarn buildCSS && node index.js",
-    "deploy": "yarn build"
+    "build": "npm run buildCSS && node index.js",
+    "deploy": "npm run build"
   },
   "dependencies": {
     "js-beautify": "^1.14.9",
