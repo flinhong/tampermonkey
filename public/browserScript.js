@@ -9,7 +9,6 @@
 // @resource     font_Sans https://fonts.font.im/css?family=Google+Sans:400,400i&display=swap
 // @resource     font_Noto https://fonts.font.im/css?family=Noto+Serif+SC:400&display=swap
 // @resource     font_Crimson https://fonts.font.im/css?family=Crimson+Pro:400,400i&display=swap
-// @resource     custom_Style https://cdn.with.rr.nu/i.j.ic/style.css
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -28,10 +27,6 @@
   GM_addStyle(notoFont);
   const crimsonFont = GM_getResourceText("font_Crimson");
   GM_addStyle(crimsonFont);
-
-  // Custom Styles
-  // const customStyle = GM_getResourceText("custom_Style");
-  // GM_addStyle(customStyle);
 
   GM_addStyle(`
 /*! fonts */
