@@ -1,8 +1,8 @@
-/*! fonts */
+// Fonts
 $serif-fonts: 'Crimson Text', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', serif;
 $sans-fonts: 'Google Sans', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', sans-serif;
 
-/*! baidu.com */
+// baidu.com
 body[domainuri='www.baidu.com'] {
 
     #wrapper,
@@ -32,7 +32,7 @@ body[domainuri='www.baidu.com'] {
     }
 }
 
-/*! google.co.uk & google.com */
+// google.co.uk & google.com
 body[domainuri='www.google.co.uk'],
 body[domainuri='www.google.cm'] {
 

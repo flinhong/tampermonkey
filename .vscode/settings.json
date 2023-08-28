@@ -3,6 +3,7 @@
         "domainuri",
         "flinhong",
         "Noto",
-        "tampermonkey"
+        "tampermonkey",
+        "userscript"
     ]
 }
