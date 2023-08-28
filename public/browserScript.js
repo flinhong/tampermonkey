@@ -6,9 +6,9 @@
 // @author       Frank Lin
 // @match        *://*/*
 // @icon         https://cdn.with.rr.nu/favicon.ico
-// @resource     font_Sans https://fonts.loli.net/css?family=Google+Sans:400,400i&display=swap
-// @resource     font_Noto https://fonts.loli.net/css?family=Noto+Serif+SC:400&display=swap
-// @resource     font_Crimson https://fonts.loli.net/css?family=Crimson+Pro:400,400i&display=swap
+// @resource     font_Sans https://fonts.loli.net/css2?family=Google+Sans:ital@0;1&display=swap
+// @resource     font_Noto https://cdn.with.rr.nu/fonts/g/css?family=Noto+Serif+SC:wght@300;400;500&display=swap
+// @resource     font_Crimson https://cdn.with.rr.nu/fonts/g/css?family=Crimson+Text:ital@0;1&display=swap
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -50,7 +50,7 @@ body[domainuri="www.baidu.com"] #container.sam_newgrid td,
 body[domainuri="www.baidu.com"] #container.sam_newgrid th,
 body[domainuri="www.baidu.com"] #container.sam_newgrid .c-showurl,
 body[domainuri="www.baidu.com"] .new-pmd .cr-title {
-  font-family: "Crimson Pro", "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei UI", serif !important;
+  font-family: "Crimson Text", "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei UI", serif !important;
 }
 body[domainuri="www.baidu.com"] .c-index-single {
   font-family: "Google Sans", "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei UI", sans-serif;
@@ -81,7 +81,7 @@ body[domainuri="www.google.cm"] textarea[title=Search],
 body[domainuri="www.google.cm"] textarea[aria-label=Search],
 body[domainuri="www.google.cm"] a.fl,
 body[domainuri="www.google.cm"] .vmod span {
-  font-family: "Crimson Pro", "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei UI", serif;
+  font-family: "Crimson Text", "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei UI", serif;
 }
 body[domainuri="www.google.co.uk"] #search h3,
 body[domainuri="www.google.co.uk"] div[role=presentation] span,
@@ -96,4 +96,4 @@ body[domainuri="www.google.cm"] #footcnt span {
 `);
 })();
 
-// @updated      Mon, 28 Aug 2023 10:02:13 GMT
+// @updated      Mon, 28 Aug 2023 11:57:45 GMT

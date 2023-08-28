@@ -1,6 +1,6 @@
 {
   "name": "tampermonkey",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "custom scripts for tampermonkey",
   "main": "index.js",
   "repository": "git@github.com:flinhong/tampermonkey.git",
@@ -9,8 +9,8 @@
   "private": false,
   "scripts": {
     "buildCSS": "sass ./src/browserStyles.scss ./src/browserStyles.css --no-source-map",
-    "build": "npm run buildCSS && node index.js",
-    "deploy": "npm run build"
+    "build": "yarn run buildCSS && node index.js",
+    "deploy": "yarn run build"
   },
   "dependencies": {
     "js-beautify": "^1.14.9",

@@ -7,9 +7,9 @@ const jsString = (styleString) => `
 // @author       Frank Lin
 // @match        *://*/*
 // @icon         https://cdn.with.rr.nu/favicon.ico
-// @resource     font_Sans https://fonts.loli.net/css?family=Google+Sans:400,400i&display=swap
-// @resource     font_Noto https://fonts.loli.net/css?family=Noto+Serif+SC:400&display=swap
-// @resource     font_Crimson https://fonts.loli.net/css?family=Crimson+Pro:400,400i&display=swap
+// @resource     font_Sans https://fonts.loli.net/css2?family=Google+Sans:ital@0;1&display=swap
+// @resource     font_Noto https://cdn.with.rr.nu/fonts/g/css?family=Noto+Serif+SC:wght@300;400;500&display=swap
+// @resource     font_Crimson https://cdn.with.rr.nu/fonts/g/css?family=Crimson+Text:ital@0;1&display=swap
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // ==/UserScript==
