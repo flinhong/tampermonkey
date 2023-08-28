@@ -1,4 +1,4 @@
-const jsString = (version, browser) => `
+const userscriptString = (version) => `
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    https://frankindev.com/
@@ -6,12 +6,8 @@ const jsString = (version, browser) => `
 // @description  try to take over the world with styles...
 // @author       Frank Lin
 // @match        *://*/*
-// @icon         https://cdn.honglin.ac.cn/favicon.ico
-${
-  browser === "safari"
-    ? "// @updateURL    https://cdn.with.rr.nu/statically/gh/flinhong/tampermonkey/main/public/userscript.js"
-    : ""
-}
+// @icon         https://cdn.with.rr.nu/favicon.ico
+// @updateURL    https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/userscript.js"
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -39,4 +35,39 @@ ${
 })();
 `;
 
-module.exports = jsString;
+const tampermonkeyString = (styleString, version) => `
+// ==UserScript==
+// @name         URI identity & styling
+// @namespace    https://frankindev.com/
+// @version      ${version}
+// @description  try to take over the world with styles...
+// @author       Frank Lin
+// @match        *://*/*
+// @icon         https://cdn.with.rr.nu/favicon.ico
+// @resource     font_Sans https://fonts.upset.dev/css2?family=Google+Sans:ital@0;1&display=swap
+// @resource     font_Noto https://cdn.honglin.ac.cn/fonts/g/css?family=Noto+Serif+SC:wght@300;400;500&display=swap
+// @resource     font_Crimson https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Text:ital@0;1&display=swap
+// @grant        GM_getResourceText
+// @grant        GM_addStyle
+// ==/UserScript==
+
+(function () {
+  "use strict";
+
+  // Your code here...
+  // add 'domainuri' attribute for css selector
+  document.body.setAttribute("domainuri", window.location.hostname);
+
+  // Google fonts
+  const sansFont = GM_getResourceText("font_Sans");
+  GM_addStyle(sansFont);
+  const notoFont = GM_getResourceText("font_Noto");
+  GM_addStyle(notoFont);
+  const crimsonFont = GM_getResourceText("font_Crimson");
+  GM_addStyle(crimsonFont);
+
+  GM_addStyle(\`\n${styleString}\`);
+})();
+`;
+
+module.exports = { userscriptString, tampermonkeyString };
