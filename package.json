@@ -1,0 +1,19 @@
+{
+  "name": "tampermonkey",
+  "version": "0.1.0",
+  "description": "custom scripts for tampermonkey",
+  "main": "index.js",
+  "repository": "git@github.com:flinhong/tampermonkey.git",
+  "author": "Frank Lin <honglin@duck.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "buildCSS": "sass ./src/browserStyles.scss ./src/browserStyles.css --no-source-map",
+    "buildJS": "yarn buildCSS && node index.js",
+    "deploy": "yarn buildJS"
+  },
+  "dependencies": {
+    "js-beautify": "^1.14.9",
+    "sass": "^1.66.1"
+  }
+}
