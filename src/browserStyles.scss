@@ -2,10 +2,10 @@
 $serif-fonts: 'Crimson Pro', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', serif;
 $sans-fonts: 'Google Sans', 'Lato', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', sans-serif;
 $narrow-fonts: 'Oswald', 'Noto Serif SC', 'Source Han Serif SC', 'Microsoft YaHei UI', serif;
+$code-fonts: 'IBM Plex Mono', monospace;
 
 // baidu.com
 body[domainuri='www.baidu.com'] {
-
     #wrapper,
     .c-wrapper,
     body,
@@ -44,7 +44,6 @@ body[domainuri='www.baidu.com'] {
 
 // news.baidu.com
 body[domainuri='news.baidu.com'] {
-
     body,
     #usrbar,
     #header-link-wrapper li a,
@@ -72,7 +71,6 @@ body[domainuri='news.baidu.com'] {
 // google.co.uk & google.com
 body[domainuri='www.google.co.uk'],
 body[domainuri='www.google.cm'] {
-
     body,
     input,
     button,
@@ -93,5 +91,20 @@ body[domainuri='www.google.cm'] {
     div[role="complementary"] h3,
     #footcnt span {
         font-family: $sans-fonts !important;
+    }
+}
+
+// localhost & jupyter notebooks
+body[domainuri='localhost:8888'] {
+    body {
+        font-family: $serif-fonts !important;
+    }
+
+    button {
+        font-family: $sans-fonts !important;
+    }
+
+    pre, code, .prompt {
+        font-family: $code-fonts !important;
     }
 }
