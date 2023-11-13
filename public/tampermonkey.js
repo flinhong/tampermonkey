@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    https://frankindev.com/
-// @version      0.0.14
+// @version      0.0.15
 // @description  try to take over the world with styles...
 // @author       Frank Lin
 // @match        *://*/*
-// @icon         https://cdn.with.rr.nu/favicon.ico
+// @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @resource     font_Sans https://fonts.upset.dev/css2?family=Google+Sans:ital@0;1&display=swap
 // @resource     font_Noto https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital@0;1&family=Noto+Serif+SC:wght@300;400;500&family=Oswald:wght@300&family=IBM+Plex+Mono:ital@0;1&display=swap
 // @grant        GM_getResourceText

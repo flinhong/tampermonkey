@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    https://frankindev.com/
-// @version      0.0.14
+// @version      0.0.15
 // @description  try to take over the world with styles...
 // @author       Frank Lin
 // @match        *://*/*
-// @icon         https://cdn.with.rr.nu/favicon.ico
+// @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @updateURL    https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/userscript.js"
 // @grant        GM_addStyle
 // ==/UserScript==
