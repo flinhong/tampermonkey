@@ -73,7 +73,8 @@ body[domainuri='news.baidu.com'] {
 
 // mbd.baidu.com
 // 百家号
-body[domainuri='mbd.baidu.com'] {
+body[domainuri='mbd.baidu.com'],
+body[domainuri='baijiahao.baidu.com'] {
   body,
   button,
   input,
