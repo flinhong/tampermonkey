@@ -128,13 +128,38 @@ body[domainuri='www.google.com'] {
   }
 }
 
-// zhihu
+// zhihu.com
 // 知乎
 body[domainuri='www.zhihu.com'] {
   body,
   .ContentItem-title,
   .AuthorInfo-content,
   .RichContent {
+    font-family: $serif-fonts !important;
+  }
+
+  button {
+    font-family: $sans-fonts !important;
+  }
+
+  pre,
+  code,
+  .prompt {
+    font-family: $code-fonts !important;
+  }
+}
+
+// smzdm.com
+// 什么值得买
+body[domainuri='www.smzdm.com'],
+body[domainuri='post.smzdm.com'] {
+  body,
+  .ranking-list *,
+  #feed-main-list *,
+  .info *,
+  .content *,
+  .m-contant *,
+  #articleId * {
     font-family: $serif-fonts !important;
   }
 
