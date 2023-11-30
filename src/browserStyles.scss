@@ -104,7 +104,7 @@ body[domainuri='baijiahao.baidu.com'] {
 
 // google.co.uk & google.com
 body[domainuri='www.google.co.uk'],
-body[domainuri='www.google.cm'] {
+body[domainuri='www.google.com'] {
   body,
   input,
   button,
@@ -125,6 +125,27 @@ body[domainuri='www.google.cm'] {
   div[role='complementary'] h3,
   #footcnt span {
     font-family: $sans-fonts !important;
+  }
+}
+
+// zhihu
+// 知乎
+body[domainuri='www.zhihu.com'] {
+  body,
+  .ContentItem-title,
+  .AuthorInfo-content,
+  .RichContent {
+    font-family: $serif-fonts !important;
+  }
+
+  button {
+    font-family: $sans-fonts !important;
+  }
+
+  pre,
+  code,
+  .prompt {
+    font-family: $code-fonts !important;
   }
 }
 
