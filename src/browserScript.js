@@ -1,11 +1,16 @@
+const domains = require("./domains.json");
 const userscriptString = (version) => `
 // ==UserScript==
 // @name         URI identity & styling
-// @namespace    https://frankindev.com/
+// @namespace    scripts.frankindev.com
 // @version      ${version}
 // @description  try to take over the world with styles...
 // @author       Frank Lin
-// @match        *://*/*
+${domains
+  .map((domain) => {
+    return `// @match        http*://${domain}/*`;
+  })
+  .join("\r\n")}
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @updateURL    https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/userscript.js"
 // @grant        GM_addStyle
@@ -36,11 +41,15 @@ const userscriptString = (version) => `
 const tampermonkeyString = (styleString, version) => `
 // ==UserScript==
 // @name         URI identity & styling
-// @namespace    https://frankindev.com/
+// @namespace    scripts.frankindev.com
 // @version      ${version}
 // @description  try to take over the world with styles...
 // @author       Frank Lin
-// @match        *://*/*
+${domains
+  .map((domain) => {
+    return `// @match        http*://${domain}/*`;
+  })
+  .join("\r\n")}
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @resource     font_Noto https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital@0;1&family=Noto+Serif+SC:wght@300;400;500&family=Oswald:wght@300&family=IBM+Plex+Mono:ital@0;1&display=swap
 // @grant        GM_getResourceText

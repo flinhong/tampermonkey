@@ -1,10 +1,19 @@
 // ==UserScript==
 // @name         URI identity & styling
-// @namespace    https://frankindev.com/
-// @version      0.0.17
+// @namespace    scripts.frankindev.com
+// @version      0.0.18
 // @description  try to take over the world with styles...
 // @author       Frank Lin
-// @match        *://*/*
+// @match        http*://www.baidu.com/*
+// @match        http*://news.baidu.com/*
+// @match        http*://mbd.baidu.com/*
+// @match        http*://baijiahao.baidu.com/*
+// @match        http*://www.google.co.uk/*
+// @match        http*://www.google.com/*
+// @match        http*://www.zhihu.com/*
+// @match        http*://www.smzdm.com/*
+// @match        http*://post.smzdm.com/*
+// @match        http*://localhost:8888/*
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @resource     font_Noto https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital@0;1&family=Noto+Serif+SC:wght@300;400;500&family=Oswald:wght@300&family=IBM+Plex+Mono:ital@0;1&display=swap
 // @grant        GM_getResourceText

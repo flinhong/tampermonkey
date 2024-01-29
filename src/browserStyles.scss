@@ -1,14 +1,14 @@
 // Fonts
-$serif-fonts: 'Crimson Pro', 'Noto Serif SC', 'Source Han Serif SC',
-  'Microsoft YaHei UI', serif;
-$sans-fonts: 'Lato', 'Noto Serif SC', 'Source Han Serif SC',
-  'Microsoft YaHei UI', sans-serif;
-$narrow-fonts: 'Oswald', 'Noto Serif SC', 'Source Han Serif SC',
-  'Microsoft YaHei UI', serif;
-$code-fonts: 'IBM Plex Mono', monospace;
+$serif-fonts: "Crimson Pro", "Noto Serif SC", "Source Han Serif SC",
+  "Microsoft YaHei UI", serif;
+$sans-fonts: "Lato", "Noto Serif SC", "Source Han Serif SC",
+  "Microsoft YaHei UI", sans-serif;
+$narrow-fonts: "Oswald", "Noto Serif SC", "Source Han Serif SC",
+  "Microsoft YaHei UI", serif;
+$code-fonts: "IBM Plex Mono", monospace;
 
 // baidu.com
-body[domainuri='www.baidu.com'] {
+body[domainuri="www.baidu.com"] {
   #wrapper,
   .c-wrapper,
   body,
@@ -22,11 +22,11 @@ body[domainuri='www.baidu.com'] {
   .c-font-big,
   .new-pmd .c-title,
   #container.sam_newgrid,
-  span[class^='_paragraph'],
-  span[class^='hint'],
-  div[class^='c_font'],
-  div[class^='op_dict'],
-  div[class^='card_layout'],
+  span[class^="_paragraph"],
+  span[class^="hint"],
+  div[class^="c_font"],
+  div[class^="op_dict"],
+  div[class^="card_layout"],
   #page,
   #container.sam_newgrid td,
   #container.sam_newgrid th,
@@ -46,7 +46,7 @@ body[domainuri='www.baidu.com'] {
 }
 
 // news.baidu.com
-body[domainuri='news.baidu.com'] {
+body[domainuri="news.baidu.com"] {
   body,
   #usrbar,
   #header-link-wrapper li a,
@@ -73,8 +73,8 @@ body[domainuri='news.baidu.com'] {
 
 // mbd.baidu.com
 // 百家号
-body[domainuri='mbd.baidu.com'],
-body[domainuri='baijiahao.baidu.com'] {
+body[domainuri="mbd.baidu.com"],
+body[domainuri="baijiahao.baidu.com"] {
   body,
   button,
   input,
@@ -82,16 +82,16 @@ body[domainuri='baijiahao.baidu.com'] {
   textarea,
   #ssr-content *,
   div#header div,
-  span[data-testid='author-name'],
-  span[data-testid='updatetime'],
-  div[data-testid='article'],
-  div[data-testid='search-rec'] *,
+  span[data-testid="author-name"],
+  span[data-testid="updatetime"],
+  div[data-testid="article"],
+  div[data-testid="search-rec"] *,
   .xcp-publish-title,
   .user-bar-uname,
   .x-interact-rich-text,
   .interact-bar,
-  div[data-testid='recent'] *,
-  div[data-testid='relate'] *,
+  div[data-testid="recent"] *,
+  div[data-testid="relate"] *,
   ul[data-testid="top-list"] * {
     font-family: $serif-fonts !important;
   }
@@ -103,26 +103,26 @@ body[domainuri='baijiahao.baidu.com'] {
 }
 
 // google.co.uk & google.com
-body[domainuri='www.google.co.uk'],
-body[domainuri='www.google.com'] {
+body[domainuri="www.google.co.uk"],
+body[domainuri="www.google.com"] {
   body,
   input,
   button,
   div,
   .gb_yd,
   .gb_Ed,
-  input[value='Google Search'],
-  input[type='submit'],
-  textarea[title='Search'],
-  textarea[aria-label='Search'],
+  input[value="Google Search"],
+  input[type="submit"],
+  textarea[title="Search"],
+  textarea[aria-label="Search"],
   a.fl,
   .vmod span {
     font-family: $serif-fonts !important;
   }
 
   #search h3,
-  div[role='presentation'] span,
-  div[role='complementary'] h3,
+  div[role="presentation"] span,
+  div[role="complementary"] h3,
   #footcnt span {
     font-family: $sans-fonts !important;
   }
@@ -130,7 +130,7 @@ body[domainuri='www.google.com'] {
 
 // zhihu.com
 // 知乎
-body[domainuri='www.zhihu.com'] {
+body[domainuri="www.zhihu.com"] {
   body,
   .ContentItem-title,
   .AuthorInfo-content,
@@ -151,8 +151,8 @@ body[domainuri='www.zhihu.com'] {
 
 // smzdm.com
 // 什么值得买
-body[domainuri='www.smzdm.com'],
-body[domainuri='post.smzdm.com'] {
+body[domainuri="www.smzdm.com"],
+body[domainuri="post.smzdm.com"] {
   body,
   .ranking-list *,
   #feed-main-list *,
@@ -175,7 +175,7 @@ body[domainuri='post.smzdm.com'] {
 }
 
 // localhost & jupyter notebooks
-body[domainuri='localhost:8888'] {
+body[domainuri="localhost:8888"] {
   body {
     font-family: $serif-fonts !important;
   }

@@ -1,10 +1,19 @@
 // ==UserScript==
 // @name         URI identity & styling
-// @namespace    https://frankindev.com/
-// @version      0.0.17
+// @namespace    scripts.frankindev.com
+// @version      0.0.18
 // @description  try to take over the world with styles...
 // @author       Frank Lin
-// @match        *://*/*
+// @match        http*://www.baidu.com/*
+// @match        http*://news.baidu.com/*
+// @match        http*://mbd.baidu.com/*
+// @match        http*://baijiahao.baidu.com/*
+// @match        http*://www.google.co.uk/*
+// @match        http*://www.google.com/*
+// @match        http*://www.zhihu.com/*
+// @match        http*://www.smzdm.com/*
+// @match        http*://post.smzdm.com/*
+// @match        http*://localhost:8888/*
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @updateURL    https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/userscript.js"
 // @grant        GM_addStyle
