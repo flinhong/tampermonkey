@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    scripts.frankindev.com
-// @version      0.0.18
+// @version      0.0.19
 // @description  try to take over the world with styles...
 // @author       Frank Lin
 // @match        http*://www.baidu.com/*
