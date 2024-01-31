@@ -1,12 +1,8 @@
 [
-  "www.baidu.com",
-  "news.baidu.com",
-  "mbd.baidu.com",
-  "baijiahao.baidu.com",
+  "*.baidu.com",
   "www.google.co.uk",
   "www.google.com",
   "www.zhihu.com",
-  "www.smzdm.com",
-  "post.smzdm.com",
+  "*.smzdm.com",
   "localhost:8888"
 ]

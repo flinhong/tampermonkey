@@ -8,7 +8,7 @@ const userscriptString = (version) => `
 // @author       Frank Lin
 ${domains
   .map((domain) => {
-    return `// @match        http*://${domain}/*`;
+    return `// @match        *://${domain}/*`;
   })
   .join("\r\n")}
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
@@ -47,7 +47,7 @@ const tampermonkeyString = (styleString, version) => `
 // @author       Frank Lin
 ${domains
   .map((domain) => {
-    return `// @match        http*://${domain}/*`;
+    return `// @match        *://${domain}/*`;
   })
   .join("\r\n")}
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
