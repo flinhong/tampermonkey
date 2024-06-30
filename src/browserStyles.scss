@@ -134,7 +134,8 @@ body[domainuri="www.zhihu.com"] {
   body,
   .ContentItem-title,
   .AuthorInfo-content,
-  .RichContent {
+  .RichContent,
+  .CommentContent {
     font-family: $serif-fonts !important;
   }
 
