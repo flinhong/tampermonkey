@@ -8,9 +8,9 @@
     "license": "MIT",
     "private": false,
     "scripts": {
-        "buildCSS": "sass ./src/browserStyles.scss ./public/styles.min.css --no-source-map --style=compressed",
-        "build": "yarn run buildCSS && node index.js",
-        "local": "yarn run build && ./local.sh",
+        "build:scss:sites": "sass ./src/sites/:./public/styles/ --no-source-map --style=expanded",
+        "build:scss": "sass ./src/browserStyle.scss ./public/styles.min.css --no-source-map --style=compressed",
+        "build": "yarn run build:scss && node index.js",
         "public": "npx auto-version && yarn run build"
     },
     "dependencies": {

@@ -9,7 +9,6 @@
 // @match        *://www.google.com/*
 // @match        *://www.zhihu.com/*
 // @match        *://*.smzdm.com/*
-// @match        *://localhost:8888/*
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @updateURL    https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/userscript.js"
 // @grant        GM_addStyle
