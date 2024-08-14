@@ -1,0 +1,22 @@
+[
+    {
+        "domain": "*.baidu.com",
+        "css": "baidu.css"
+    },
+    {
+        "domain": "www.google.co.uk",
+        "css": "google.css"
+    },
+    {
+        "domain": "www.google.com",
+        "css": "google.css"
+    },
+    {
+        "domain": "www.zhihu.com",
+        "css": "zhihu.css"
+    },
+    {
+        "domain": "*.smzdm.com",
+        "css": "smzdm.css"
+    }
+]
