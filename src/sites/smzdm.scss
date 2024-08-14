@@ -1,26 +1,26 @@
-@import '../fonts.scss';
+@import "../fonts.scss";
 
 // smzdm.com
 // 什么值得买
-body[domainuri='www.smzdm.com'],
-body[domainuri='post.smzdm.com'] {
-    body,
-    .ranking-list *,
-    #feed-main-list *,
-    .info *,
-    .content *,
-    .m-contant *,
-    #articleId * {
-        font-family: $serif-fonts !important;
-    }
+body[domainuri="www.smzdm.com"],
+body[domainuri="post.smzdm.com"] {
+  body,
+  .ranking-list *,
+  #feed-main-list *,
+  .info *,
+  .content *,
+  .m-contant *,
+  #articleId * {
+    font-family: $serif-fonts !important;
+  }
 
-    button {
-        font-family: $sans-fonts !important;
-    }
+  button {
+    font-family: $sans-fonts !important;
+  }
 
-    pre,
-    code,
-    .prompt {
-        font-family: $code-fonts !important;
-    }
+  pre,
+  code,
+  .prompt {
+    font-family: $code-fonts !important;
+  }
 }

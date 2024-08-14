@@ -1,23 +1,23 @@
-@import '../fonts.scss';
+@import "../fonts.scss";
 
 // zhihu.com
 // 知乎
-body[domainuri='www.zhihu.com'] {
-    body,
-    .ContentItem-title,
-    .AuthorInfo-content,
-    .RichContent,
-    .CommentContent {
-        font-family: $serif-fonts !important;
-    }
+body[domainuri="www.zhihu.com"] {
+  body,
+  .ContentItem-title,
+  .AuthorInfo-content,
+  .RichContent,
+  .CommentContent {
+    font-family: $serif-fonts !important;
+  }
 
-    button {
-        font-family: $sans-fonts !important;
-    }
+  button {
+    font-family: $sans-fonts !important;
+  }
 
-    pre,
-    code,
-    .prompt {
-        font-family: $code-fonts !important;
-    }
+  pre,
+  code,
+  .prompt {
+    font-family: $code-fonts !important;
+  }
 }
