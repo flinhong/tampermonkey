@@ -30,7 +30,7 @@ ${sites
 
   const styles = [
     'https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital@0;1&family=Noto+Serif+SC:wght@300;400;500&family=Oswald:wght@300&family=IBM+Plex+Mono:ital@0;1&display=swap',
-    \`https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/\${domain}.css\`
+    'https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/'+domain+'.css'
   ]
 
   styles.forEach((href) => {
@@ -52,7 +52,7 @@ const tampermonkeyString = (version) => `
 // @author       Frank Lin
 ${sites
     .map((site) => {
-        return `// @match        *://${site.domain}/*\r\n// @resource     css_${site.domain.replace("*.", "").replace(".com", "").replace(".co.uk", "").replace("www.", "")} https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/${site.css}`;
+        return `// @match        *://${site.domain}/*\r\n// @resource     css_${site.domain.replace("*.", "").replace(".com", "").replace(".co.uk", "").replace("www.", "")}\thttps://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/${site.css}`;
     })
     .join("\r\n")}
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
@@ -77,7 +77,7 @@ ${sites
       .replace(".com", "")
       .replace(".co.uk", "")
       .replace("www.", "");
-  const styleFont = GM_getResourceText(\`css_\${domain}\`);
+  const styleFont = GM_getResourceText("css_" + domain);
   GM_addStyle(styleFont); 
 })();
 `;
