@@ -1,6 +1,6 @@
 {
     "name": "tampermonkey",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "custom scripts for tampermonkey",
     "main": "index.js",
     "repository": "git@github.com:flinhong/tampermonkey.git",
@@ -8,7 +8,7 @@
     "license": "MIT",
     "private": false,
     "scripts": {
-        "build:scss": "sass ./src/sites/:./public/styles/ --no-source-map --style=expanded",
+        "build:scss": "sass ./src/sites/:./public/styles/ --no-source-map --style=compressed",
         "build": "yarn run build:scss && node build:v2.js",
         "public": "npx auto-version && yarn run build"
     },

@@ -18,5 +18,9 @@
     {
         "domain": "*.smzdm.com",
         "css": "smzdm.css"
+    },
+    {
+        "domain": "www.bilibili.com",
+        "css": "bilibili.css"
     }
 ]

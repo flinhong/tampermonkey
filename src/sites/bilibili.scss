@@ -1,0 +1,12 @@
+@import "../fonts.scss";
+
+// bilibili.com
+// 哔哩哔哩
+body[domainuri="www.bilibili.com"] {
+  body,
+  .bili-video-card .bili-video-card__info--tit > a,
+  .bili-video-card .bili-video-card__info--icon-text,
+  .bili-video-card .bili-video-card__info--author {
+    font-family: $serif-fonts !important;
+  }
+}

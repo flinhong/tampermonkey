@@ -5,12 +5,14 @@
 body[domainuri="www.smzdm.com"],
 body[domainuri="post.smzdm.com"] {
   body,
+  #global-nav,
   .ranking-list *,
   #feed-main-list *,
   .info *,
   .content *,
   .m-contant *,
-  #articleId * {
+  #articleId *,
+  .category-box ul li {
     font-family: $serif-fonts !important;
   }
 
