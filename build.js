@@ -4,7 +4,7 @@ const AutoVersion = require("auto-version-js");
 const {
     userscriptString,
     tampermonkeyString,
-} = require("./src/browserscript.v2.js");
+} = require("./src/browserscript.js");
 
 const version = AutoVersion.getVersion();
 

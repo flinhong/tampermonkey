@@ -1,6 +1,6 @@
 {
     "name": "tampermonkey",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "custom scripts for tampermonkey",
     "main": "index.js",
     "repository": "git@github.com:flinhong/tampermonkey.git",
@@ -9,7 +9,7 @@
     "private": false,
     "scripts": {
         "build:scss": "sass ./src/sites/:./public/styles/ --no-source-map --style=compressed",
-        "build": "yarn run build:scss && node build:v2.js",
+        "build": "yarn run build:scss && node build.js",
         "public": "npx auto-version && yarn run build"
     },
     "dependencies": {
