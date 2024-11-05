@@ -20,8 +20,8 @@ ${sites
   "use strict";
 
   // Your code here...
-  // add 'domainuri' attribute for css selector
-  document.body.setAttribute("domainuri", window.location.hostname);
+  // add 'data-domain' attribute for css selector
+  document.body.setAttribute("data-domain", window.location.hostname);
 
   const domain = window.location.hostname
     .replace(".com", "")
@@ -65,8 +65,8 @@ ${sites
   "use strict";
 
   // Your code here...
-  // add 'domainuri' attribute for css selector
-  document.body.setAttribute("domainuri", window.location.hostname);
+  // add 'data-domain' attribute for css selector
+  document.body.setAttribute("data-domain", window.location.hostname);
 
   // Google fonts
   const googleFont = GM_getResourceText("font_Google");

@@ -1,9 +1,9 @@
-@import "../fonts.scss";
+@use "fonts";
 
 // smzdm.com
 // 什么值得买
-body[domainuri="www.smzdm.com"],
-body[domainuri="post.smzdm.com"] {
+body[data-domain="www.smzdm.com"],
+body[data-domain="post.smzdm.com"] {
   body,
   #global-nav,
   .ranking-list *,
@@ -13,16 +13,16 @@ body[domainuri="post.smzdm.com"] {
   .m-contant *,
   #articleId *,
   .category-box ul li {
-    font-family: $serif-fonts !important;
+    font-family: fonts.$serif-fonts !important;
   }
 
   button {
-    font-family: $sans-fonts !important;
+    font-family: fonts.$sans-fonts !important;
   }
 
   pre,
   code,
   .prompt {
-    font-family: $code-fonts !important;
+    font-family: fonts.$code-fonts !important;
   }
 }

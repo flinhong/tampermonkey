@@ -1,8 +1,8 @@
-@import "../fonts.scss";
+@use "fonts";
 
 // bilibili.com
 // 哔哩哔哩
-body[domainuri="www.bilibili.com"] {
+body[data-domain="www.bilibili.com"] {
   body,
   .bili-video-card .bili-video-card__info--tit > a,
   .bili-video-card .bili-video-card__info--icon-text,
@@ -16,6 +16,6 @@ body[domainuri="www.bilibili.com"] {
   .bpx-player-sending-bar *,
   .desc-info-text,
   bili-comment-renderer {
-    font-family: $serif-fonts !important;
+    font-family: fonts.$serif-fonts !important;
   }
 }

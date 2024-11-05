@@ -22,5 +22,9 @@
     {
         "domain": "www.bilibili.com",
         "css": "bilibili.css"
+    },
+    {
+        "domain": "doubao.com",
+        "css": "doubao.css"
     }
 ]

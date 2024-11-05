@@ -1,7 +1,7 @@
-@import "../fonts.scss";
+@use "fonts";
 
 // baidu.com
-body[domainuri="www.baidu.com"] {
+body[data-domain="www.baidu.com"] {
   #wrapper,
   .c-wrapper,
   body,
@@ -26,20 +26,20 @@ body[domainuri="www.baidu.com"] {
   #container.sam_newgrid .c-showurl,
   .new-pmd .cr-title,
   .wrapper_new #u .s-top-username {
-    font-family: $serif-fonts !important;
+    font-family: fonts.$serif-fonts !important;
   }
 
   .c-index-single {
-    font-family: $narrow-fonts !important;
+    font-family: fonts.$narrow-fonts !important;
   }
 
   .s-ctner-menus .s-menu-item {
-    font: 14px/24px $sans-fonts;
+    font: 14px/24px fonts.$sans-fonts;
   }
 }
 
 // news.baidu.com
-body[domainuri="news.baidu.com"] {
+body[data-domain="news.baidu.com"] {
   body,
   #usrbar,
   #header-link-wrapper li a,
@@ -56,18 +56,18 @@ body[domainuri="news.baidu.com"] {
   .col-mod .focuslistnews .bold-item,
   .l-right-col .ulist li,
   .focuslistnews li {
-    font-family: $serif-fonts !important;
+    font-family: fonts.$serif-fonts !important;
   }
 
   .mod-headline-tab {
-    font-family: $sans-fonts !important;
+    font-family: fonts.$sans-fonts !important;
   }
 }
 
 // mbd.baidu.com
 // 百家号
-body[domainuri="mbd.baidu.com"],
-body[domainuri="baijiahao.baidu.com"] {
+body[data-domain="mbd.baidu.com"],
+body[data-domain="baijiahao.baidu.com"] {
   body,
   button,
   input,
@@ -86,11 +86,11 @@ body[domainuri="baijiahao.baidu.com"] {
   div[data-testid="recent"] *,
   div[data-testid="relate"] *,
   ul[data-testid="top-list"] * {
-    font-family: $serif-fonts !important;
+    font-family: fonts.$serif-fonts !important;
   }
 
   .xcp-list-loader,
   .interact-desc * {
-    font-family: $sans-fonts !important;
+    font-family: fonts.$sans-fonts !important;
   }
 }

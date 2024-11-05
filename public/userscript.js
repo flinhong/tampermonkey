@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    scripts.frankindev.com
-// @version      0.1.5
+// @version      0.1.7
 // @description  try to take over the world with styles...
 // @author       Frank Lin
 // @match        *://*.baidu.com/*
@@ -10,6 +10,7 @@
 // @match        *://www.zhihu.com/*
 // @match        *://*.smzdm.com/*
 // @match        *://www.bilibili.com/*
+// @match        *://doubao.com/*
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @updateURL    https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/userscript.js"
 // @grant        GM_addStyle
@@ -19,8 +20,8 @@
   "use strict";
 
   // Your code here...
-  // add 'domainuri' attribute for css selector
-  document.body.setAttribute("domainuri", window.location.hostname);
+  // add 'data-domain' attribute for css selector
+  document.body.setAttribute("data-domain", window.location.hostname);
 
   const domain = window.location.hostname
     .replace(".com", "")
