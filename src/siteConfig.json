@@ -26,5 +26,9 @@
     {
         "domain": "doubao.com",
         "css": "doubao.css"
+    },
+    {
+        "domain": "www.doubao.com",
+        "css": "doubao.css"
     }
 ]
